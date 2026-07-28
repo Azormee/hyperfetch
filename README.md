@@ -1,22 +1,30 @@
 # HyperFetch
 
-A fast, customizable system information tool with a real-time rotating 3D ASCII logo.
+> A fast, customizable system information tool with a real-time rotating 3D ASCII logo.
+
+![Preview](screenshots/preview.png)
 
 ## Features
 
-- 🎨 Theme support (Rose Pine by default)
-- 🖥️ Real-time rotating 3D ASCII logos
+- 🎨 Theme support
+- 🌸 Rose Pine by default
+- 🖥️ Real-time rotating ASCII logos
 - ⚡ Fast
 - 🧩 Modular architecture
-- 🎭 Nerd Font icons
 - 🪟 Wayland friendly
-- 🐧 Linux first
+
+## Building
+
+```bash
+cmake -B build
+cmake --build build
+./build/hyperfetch
+```
 
 ## Roadmap
 
-- [ ] Refactor original fetch code
 - [ ] Theme engine
-- [ ] TOML configuration
-- [ ] Rose Pine
-- [ ] Catppuccin
-- [ ] Custom layouts
+- [ ] TOML config
+- [ ] Nerd Font icons
+- [ ] Layout system
+- [ ] Plugin API
