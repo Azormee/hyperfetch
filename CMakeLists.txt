@@ -6,7 +6,11 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 add_executable(hyperfetch
-    src/main.c
+    src/core/main.c
+    src/render/renderer.c
 )
 
-target_include_directories(hyperfetch PRIVATE include)
+target_include_directories(hyperfetch PRIVATE
+    include
+    src/render
+)
